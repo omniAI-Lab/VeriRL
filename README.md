@@ -10,3 +10,4 @@ The codebase will be released in stages, including:
 * 🔜 Reinforcement learning training code (OpenRLHF-based)
 * 🔜 Evaluation scripts for RTLLM and VerilogEval benchmarks
 * 🔜 Final release with documentation and reproducible experiments
+* 
