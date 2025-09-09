@@ -2,7 +2,7 @@
 <img src="logo.jpg" alt="VeriRL" width="220" align="center">
 </p>
 
-<div align="center"><h1>&nbsp;VeriRL: Reinforcement Learning for Verilog Code Generation with Trace-back Rescoring and Balanced Sampling</h1></div>
+<div align="center"><h1>&nbsp;VeriRL: Boosting the LLM-based Verilog Code Generation via Reinforcement Learning</h1></div>
 
 <p align="center">
 | <a href="https://arxiv.org/pdf/2508.18462"><b>Preprint</b></a> | <a href="https://arxiv.org/pdf/2508.18462"><b>Paper</b></a> |
