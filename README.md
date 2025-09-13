@@ -141,7 +141,7 @@ Below is a description of the key parameters used in the inference scripts:
 
 |      | Base Model                                                                                          | VeriRL                                                               |
 | ---- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| 7B   | [Qwen/CodeQwen1.5-7B-Chat](https://huggingface.co/Qwen/CodeQwen1.5-7B-Chat)                         | [VeriRL-CodeQwen]()|
+| 7B   | [Qwen/Qwen2.5-Coder-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)                        | [VeriRL-CodeQwen2.5](https://huggingface.co/tttboy/Verirl-CodeQwen2.5)|
 
 ### Auto Test on Benchmarks
 
@@ -169,8 +169,7 @@ Our repository includes a script to evaluate the model's performance on **Verilo
 
 ## Datasets
 
-Our dataset **Veribench-53K** is available at:  
-[Dataset_Link](https://huggingface.co/datasets/tttboy/Veribench-53K)
+Our dataset **Veribench-53K** is available at:  [Dataset_Link](https://huggingface.co/datasets/tttboy/Veribench-53K)
 
 ---
 
