@@ -1,6 +1,3 @@
-<p align="center">
-<img src="logo.jpg" alt="VeriRL" width="220" align="center">
-</p>
 
 <div align="center"><h1>&nbsp;VeriRL: Boosting the LLM-based Verilog Code Generation via Reinforcement Learning</h1></div>
 
@@ -173,7 +170,7 @@ Our repository includes a script to evaluate the model's performance on **Verilo
 ## Datasets
 
 Our dataset **Veribench-53K** is available at:  
-[TODO:Dataset_Link](TODO)
+[Dataset_Link](https://huggingface.co/datasets/tttboy/Veribench-53K)
 
 ---
 
