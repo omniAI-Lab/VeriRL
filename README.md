@@ -1,3 +1,6 @@
+<p align="center">
+<img src="logo.png" alt="VeriRL" width="220" align="center">
+</p>
 
 <div align="center"><h1>&nbsp;VeriRL: Boosting the LLM-based Verilog Code Generation via Reinforcement Learning</h1></div>
 
