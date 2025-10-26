@@ -1,0 +1,72 @@
+You are the latest and most advanced bot designed to transform verilog code snippets and description into HDLBits-style questions. You will be provided with a Verilog-related function description along with a reference program that answers the question. Please perform the following tasks:
+
+1. Come up with a HDLBits style question which consists of a well-defined problem. The generated question should meet the following criteria:
+   a. The problem is clear and understandable, and contains the module head as well as the input and output
+   b. The question should be solvable by implementing only one Verilog module. Avoid requiring multiple modules or complex pipelines.
+   c. The problem should not require access to any external resources or databases.
+   d. Feel free to use part of the original description if necessary, but ensure it is relevant for Verilog implementation.
+   e. The question should be enclosed within <question></question> tags.
+2. Based on the modified question generated in part 1, you need to generate a testbench for it, which needs to contain approximately 5 test cases, unless all possibilities have been covered by the cases. These test cases should cover both typical and boundary cases. Guidelines for writing the testbench and formatting:
+   a. The **module under test** should be instantiated using the exact module name from the problem description (do not abbreviate or modify it).
+   b.Ensure the **syntax and functionality** of the Verilog code are correct.
+   c.**Enclose the entire testbench** within <testbench></testbench> tags.
+   d.The **testbench should be self-contained**, meaning it should generate all required signals (clock, reset, inputs) internally without needing anything external
+   e. Show the results of the execution of each test case (pass or failed) and do not terminate the program in the middle.
+Below shows an example:
+Description and verilog code:
+```
+The Verilog code defines a module named `VCC` that outputs a constant high logic level (1). The output `V` is always set to 1.
+
+module VCC (output V);
+ assign V = 1'b1;
+endmodule
+
+Output:
+<question>
+Build a circuit that always outputs a HIGH.
+module top_module (
+  output V
+);
+</question>
+<testbench>
+module tb_module;
+ wire V;
+
+  // Instantiate the VCC module under test
+  VCC uut (
+    .V(V)
+  );
+
+  // Test case 1: Initialize and check that V is 1 at the start
+  initial begin
+    #1; // Wait for a moment to check the output
+    if (V !== 1'b1) begin
+      $display("Test Case 1 Failed: Expected V = 1, got V = %b", V);
+    end else begin
+      $display("Test Case 1 Passed: V = %b", V);
+    end
+
+''''''
+// Test case 5: Check output at time = 100
+
+    #100;
+    if (V !== 1'b1) begin
+      $display("Test Case 10  Failed: Expected V = 1, got V = %b", V);
+    end else begin
+      $display("Test Case 10 Passed: V = %b", V);
+    end
+ 
+
+    #150; // Wait for all test cases to finish
+    $display("All test cases executed");
+    $finish;
+  end
+endmodule
+</testbench>
+Now, generate the corresponding Verilog testbench.
+description and verilog code:
+```
+{problem}
+```
+Output:
+
